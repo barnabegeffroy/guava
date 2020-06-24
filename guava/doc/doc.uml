@@ -1,30 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_d45T8KGqEeqQ-r8Yfbilwg" name="doc">
-  <packagedElement xmi:type="uml:Package" xmi:id="_0anLEKMjEeqoLIqiVR2L6Q" name="common.collect">
-    <packagedElement xmi:type="uml:Class" xmi:id="_GaaYgKMkEeqoLIqiVR2L6Q" name="FilteringImmutableMapKeySet"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_HjH3kKMlEeqoLIqiVR2L6Q" name="Maps">
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_YWnC4KMlEeqoLIqiVR2L6Q" name="filteringImmutableSet">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_q3XoUKMlEeqoLIqiVR2L6Q" type="_gdBwYKMlEeqoLIqiVR2L6Q" direction="return"/>
-      </ownedOperation>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_d45T8KGqEeqQ-r8Yfbilwg" name="doc">
+    <packagedElement xmi:type="uml:Package" xmi:id="_0anLEKMjEeqoLIqiVR2L6Q" name="common.collect">
+      <packagedElement xmi:type="uml:Class" xmi:id="_GaaYgKMkEeqoLIqiVR2L6Q" name="FilteringImmutableMapKeySet">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qS7oILX1Eeq71McvhMl70w" name="immutableMap" visibility="public" type="_xO7w8LX1Eeq71McvhMl70w">
+          <qualifier xmi:type="uml:Property" xmi:id="_KP7B0LX5Eeq71McvhMl70w" name="ImmutableMap" visibility="public" type="_xO7w8LX1Eeq71McvhMl70w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LF3yYLX5Eeq71McvhMl70w" name="setOfValue" visibility="public" type="_2hd6NrX4Eeq71McvhMl70w">
+          <qualifier xmi:type="uml:Property" xmi:id="_LF3yYbX5Eeq71McvhMl70w" name="ImmutableMap" visibility="public" type="_xO7w8LX1Eeq71McvhMl70w"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_cuDxELX5Eeq71McvhMl70w" name="filter">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_of5AYLX5Eeq71McvhMl70w" type="_GaaYgKMkEeqoLIqiVR2L6Q" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_5GRj0LX5Eeq71McvhMl70w" name="immutableMap" type="_xO7w8LX1Eeq71McvhMl70w"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_9wPYkLX5Eeq71McvhMl70w" name="setOfValue" type="_2hd6NrX4Eeq71McvhMl70w"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HjH3kKMlEeqoLIqiVR2L6Q" name="Maps">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_YWnC4KMlEeqoLIqiVR2L6Q" name="filteringImmutableSet">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_q3XoUKMlEeqoLIqiVR2L6Q" type="_gdBwYKMlEeqoLIqiVR2L6Q" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gdBwYKMlEeqoLIqiVR2L6Q" name="ImmutableSet of K"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xO7w8LX1Eeq71McvhMl70w" name="ImmutableMap"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_gdBwYKMlEeqoLIqiVR2L6Q" name="ImmutableSet"/>
-  </packagedElement>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_m59YoKJWEeqrsLEkbr0c6g">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m6Ab8KJWEeqrsLEkbr0c6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_m62JcKJWEeqrsLEkbr0c6g">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m64lsKJWEeqrsLEkbr0c6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_m7iF8KJWEeqrsLEkbr0c6g">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m7lJQKJWEeqrsLEkbr0c6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
-  </profileApplication>
-</uml:Model>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2hd6MLX4Eeq71McvhMl70w" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_2hd6MbX4Eeq71McvhMl70w" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_2hd6NLX4Eeq71McvhMl70w" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_2hd6NrX4Eeq71McvhMl70w" name="EnumSet"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_m59YoKJWEeqrsLEkbr0c6g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m6Ab8KJWEeqrsLEkbr0c6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_m62JcKJWEeqrsLEkbr0c6g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m64lsKJWEeqrsLEkbr0c6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_m7iF8KJWEeqrsLEkbr0c6g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m7lJQKJWEeqrsLEkbr0c6g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_2htKwLX4Eeq71McvhMl70w" name="java.util.Map" base_Classifier="_2hd6NrX4Eeq71McvhMl70w"/>
+  <standard:Create xmi:id="_hhcAgLX5Eeq71McvhMl70w" base_BehavioralFeature="_cuDxELX5Eeq71McvhMl70w"/>
+</xmi:XMI>
